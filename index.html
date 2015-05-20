@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="import" href="elements/hello-world.html">
+		<link rel="import" href="elements/hello-array.html">
+		<link rel="import" href="elements/twoway-databinding.html">
+		<link rel="import" href="bower_components/core-tooltip/core-tooltip.html">
+		<link rel="import" href="bower_components/core-header-panel/core-header-panel.html">
+		<link rel="import" href="bower_components/core-toolbar/core-toolbar.html">
+		<link rel="import" href="bower_components/core-icons/core-icons.html">
+		<link rel="import" href="bower_components/core-icons/social-icons.html">
+		<link rel="import" href="bower_components/paper-elements/paper-elements.html">
+			
+	<script src="bower_components/webcomponentsjs/webcomponents.min.js"></script>
+	</head>
+	<style>
+		hello-world::shadow h1{
+			color:red;
+		}
+		h1{
+			color:blue;
+		}
+		
+		core-toolbar{
+			background: #333;
+			color: #FFF;
+		}
+		core-icon[icon="polymer"]{
+			color: blue;
+			height: 50px;
+			width: 50px;
+		}
+		.example{
+			background: #333;
+			padding: 10px;
+		}
+		.example> div{
+			background: #eee;
+			margin: 10px;
+		}
+		.ripple{
+			width: 200px;
+			height: 200px;
+			border: solid 1px #333;
+			position: relative;	
+		}
+	</style>
+	<body fullbleed layout vertical>
+		<core-header-panel flex>
+			<core-toolbar>
+				<div>Hello</div>
+			</core-toolbar>
+		
+		
+		<paper-button>flat button</paper-button>
+		<paper-button raised>raised button</paper-button>
+		<paper-checkbox></paper-checkbox>
+		<div class= "example">
+			<div>One</div>
+			<div>Two</div>
+			<div>Three</div>
+		</div>
+	
+		<p>
+			hello hello hello
+		</p>
+	
+		<div class= "example" layout horizontal>
+			<div>One</div>
+			<div flex>Two</div>
+			<div>Three</div>
+		</div>
+		<p>
+			hello hello hello
+		</p>
+		
+		<div class= "example" layout vertical style="height:300px">
+			<div flex three>One</div>
+			<div flex two>Two</div>
+			<div flex>Three</div>
+		</div>
+		<div class="ripple">
+			<paper-ripple fit></paper-ripple>
+		</div>
+		
+	
+		<core-icon icon="polymer"></core-icon>
+		<core-icon icon="android"></core-icon>
+		<core-icon icon="social:post-instagram"></core-icon>
+	
+		<p>
+			hello hello hello
+		</p>
+		<hello-array></hello-array>
+		<hello-world name="(Bedant) Passing From index"></hello-world>
+		<hello-world></hello-world>
+		<twoway-databinding></twoway-databinding>
+		<twoway-databinding></twoway-databinding>
+		<h1>Header</h1>
+		
+		<core-tooltip label="I'm a tooltip" position="right">
+ 		 <span>Hover over me.</span>
+		</core-tooltip>
+		
+		
+		</core-header-panel>
+	</body>
+</html>
